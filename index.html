@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hearts"></div>
+
+        <div class="hearts"></div>
+
+        <h1 class="title">🎉 Birthday Surprise Game 🎉</h1>
+
+        <div class="card">
+            <h2 id="question">What is the birthday girl's favorite color?</h2>
+
+            <input type="text" id="answer" placeholder="Type your answer...">
+
+            <button onclick="checkAnswer()">Submit</button>
+
+            <p id="message"></p>
+        </div>
+ 
+        <audio id="birthdayMusic" loop>
+        <source src="music.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="hidden" id="surpriseBox">
+            <h1>🎂 HAPPY BIRTHDAY <span style="color:  #ff758c;">Poonam Di!</span> 🎂</h1>
+
+            <p class="wish">
+                May your day be filled with joy, laughter,
+                peace, love, and lots of cake! 🎁✨
+            </p>
+
+            <button onclick="showFinalMessage()">Open Final Surprise</button>
+        </div>
+
+        <div class="hidden" id="finalMessage">
+            <h2>💖 You Are Special 💖</h2>
+
+            <p>
+                Never forget how valuable and loved you are.
+                Keep smiling and keep shining brightly.
+            </p>
+
+            <div class="balloons">
+                🎈 🎈 🎈 🎈 🎈
+            </div>
+
+            <img id="slideshow" src="photo4.jpeg">
+            <img id="slideshow" src="photo5.jpeg">
+            <img id="slideshow" src="photo6.jpeg">
+            <img id="slideshow" src="photo7.jpeg">
+            <img id="slideshow" src="photo8.jpeg">
+
+            <div>
+                <div>💌 प्यारी बहन के लिए प्रेम पत्र (Letter)</div>
+                <div>प्रिय बहना,</div>
+                <div>जन्मदिन की बहुत-बहुत शुभकामनाएँ!</div>
+                <div>आज के इस विशेष दिन पर,
+                 मैं परमेश्वर का धन्यवाद करती हूँ कि उन्होंने मुझे तुम्हारे जैसी अनमोल बहन दी। तुम सिर्फ मेरी बहन नहीं, 
+                 बल्कि मेरी सबसे अच्छी दोस्त और मार्गदर्शक हो।
+                </div>
+                <div>परमेश्वर के वचन कहते हैं कि तुम प्रभु का दिया हुआ एक उत्तम उपहार हो।
+                 तुम्हारा निस्वार्थ प्यार और साथ मेरे जीवन को खूबसूरत बनाता है। मैं प्रार्थना करती हूँ कि आने वाला वर्ष तुम्हारे लिए 
+                 ढेर सारी आशीषें, उत्तम स्वास्थ्य, और सफलता लेकर आए।
+                </div>
+                <div>ईश्वर तुम्हारे हर एक कदम की रक्षा करे और तुम्हें अपनी शांति 
+                 से भर दे। तुम्हारी मुस्कान कभी कम न हो, 
+                क्योंकि तेरी हंसी में ही मेरी खुशी है।
+                </div>
+                <div>हमेशा याद रखना कि मैं तुमसे कितना प्यार करती हूँ।</div>
+                
+                <p>
+                ढेर सारा प्यार,तुम्हारी बहन
+                </p>
+
+                <p>
+                    Alina
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
